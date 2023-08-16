@@ -63,7 +63,7 @@ def main():
     if process_button:
 
         # Call the function to process the URLs and retrieve podcast guest information
-        podcast_info = process_podcast_info(url)
+        podcast_info = process_podcast(url)
 
         # Right section - Newsletter content
         st.header("Newsletter Content")
