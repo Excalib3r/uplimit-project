@@ -34,7 +34,7 @@ def main():
     )
     st.image('bg-image.jpg', use_column_width=True)
     
-    st.title("Newsletter Dashboard")
+    st.title("🎙️ Tuned In: Your Curated Podcast Digest!")
     
     
     available_podcast_info = create_dict_from_json_files('.')
@@ -52,7 +52,7 @@ def main():
         podcast_info = available_podcast_info[selected_podcast]
 
         # Right section - Newsletter content
-        st.header("Newsletter Content")
+        st.header("Hello podcast aficionados! 🌟The moment you've been waiting for is here! We've delved deep into your selected favorites and brought together a captivating digest of this week's episodes. From riveting narratives to enlightening talks, these are the stories that stood out in the world of podcasts. Eager to know what made the cut? Let's dive right in and embrace the audio magic that awaits. Here's to a week of listening bliss! 🎧")
 
         # Display the podcast title
         st.subheader("Episode Title")
