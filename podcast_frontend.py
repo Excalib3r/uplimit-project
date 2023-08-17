@@ -4,13 +4,45 @@ import json
 import os
 
 def main():
-    st.title("Newsletter Dashboard")
 
+    # Inject custom CSS to set the background color
+    st.markdown(
+        """
+        <style>
+        body {
+           background-color: #ec864b ;
+        }
+        
+        /* Making the content and sidebar background completely opaque */
+        div.stButton > button:first-child {
+            background-color: #206579;
+            color : #fff;
+            border : none;
+            
+        }
+        div[data-baseweb="select"] > div {
+            background-color: #f7ae52 ;
+            color : #fff;
+           
+        }
+        
+        
+        
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+    st.image('bg-image.jpg', use_column_width=True)
+    
+    st.title("Newsletter Dashboard")
+    
+    
     available_podcast_info = create_dict_from_json_files('.')
 
     # Left section - Input fields
     st.sidebar.header("Podcast RSS Feeds")
-
+  
+    
     # Dropdown box
     st.sidebar.subheader("Available Podcasts Feeds")
     selected_podcast = st.sidebar.selectbox("Select Podcast", options=available_podcast_info.keys())
@@ -43,6 +75,7 @@ def main():
         with col3:
             st.subheader("Podcast Guest")
             st.write(podcast_info['podcast_guest'])
+            
 
         
 
