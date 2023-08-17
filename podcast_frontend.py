@@ -46,7 +46,7 @@ def main():
     )
     st.image('bg-image.jpg', use_column_width=True)
     
-    st.title("🎙️ Your Curated Podcast Digest!")
+    st.title("🎙️ Week's Pod Spark!")
     
     
     available_podcast_info = create_dict_from_json_files('.')
@@ -64,7 +64,7 @@ def main():
         podcast_info = available_podcast_info[selected_podcast]
 
         # Right section - Newsletter content
-        st.header("Get ready for a week of captivating podcast journeys that promise listening bliss! 🎧")
+        st.header("Get ready for a week of captivating podcast highlights that promise listening bliss! 🎧")
 
         # Display the podcast title
         st.subheader("Episode Title")
