@@ -83,7 +83,11 @@ def main():
         background-color: #f7ae52;
         color: #fff !important;
         }
-
+        
+        .css-6qob1r.eczjsme3{
+        background-color: #f7ae52;
+        color: #fff !important;
+        }
         
 
         .sidebar.header{
